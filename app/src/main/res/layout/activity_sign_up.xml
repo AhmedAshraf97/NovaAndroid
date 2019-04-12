@@ -10,7 +10,7 @@
 
     <ImageView
         android:id="@+id/ImageView_SignUp_Logo"
-        android:layout_width="70dp"
+        android:layout_width="69dp"
         android:layout_height="70dp"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
