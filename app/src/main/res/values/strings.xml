@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Nova</string>
+    <string name="splash_signin">Sign In</string>
+    <string name="signup_signin">Sign In</string>
+    <string name="signup_confirm">Confirm</string>
+    <string name="splash_signup">Sign Up</string>
+    <string name="editprofile_edit">Edit Profile</string>
+    <string name="editprofile_cancel">Cancel</string>
+    <string name="editprofile_save">Save</string>
+    <string name="editprofile_name">Name</string>
+    <string name="editprofile_username">Username</string>
+    <string name="editprofile_loc">Location</string>
+    <string name="editprofile_bio">Bio</string>
+    <string name="editprofile_HintUsername">Change username</string>
+    <string name="editprofile_HintLoc">Add your location</string>
+    <string name="editprofile_HintBio">Add a bio to your profile</string>
+    <string name="SignIn_LogIn">Log in to Nova</string>
+    <string name="SignIn_UsernameHint">Enter Your Email</string>
+    <string name="SignIn_PasswordHint">Enter Your Password</string>
+    <string name="SignIn_Confirm">Confirm</string>
+    <string name="SignIn_ForgotPassword"> Forgot Password ? </string>
+    <string name="SignIn_SignUp">Sign Up</string>
+    <string name="SignIn_DontHaveAccount"> "Don't have an account?" </string>
+    <string name="Profile_EditProfile">Edit Profile </string>4
+    <string name="ForgotPassword_Forgot">Forgot Password</string>
+    <string name="ForgotPassword_EmailHint">Enter Your Email</string>
+    <string name="ForgotPassword_Confirm">Confirm</string>
+    <string name="Notifications">Notifications</string>
+    <string name="Back">Back</string>
+    <string name="Mentions">Mentions</string>
+    <string name="Likes">Likes</string>
+    <string name="Retweets">Retweets</string>
+    <string name="Followers">Followers</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

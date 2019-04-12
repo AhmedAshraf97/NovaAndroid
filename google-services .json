@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "76182237574",
+    "firebase_url": "https://nova-42130.firebaseio.com",
+    "project_id": "nova-42130",
+    "storage_bucket": "nova-42130.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76182237574:android:56d49a7f08345595",
+        "android_client_info": {
+          "package_name": "com.example.narim.nova"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76182237574-t1o59flj0fiaau1mljhbf3sqq01d7sb0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.narim.nova",
+            "certificate_hash": "b331b868a2421434e5503668b1f6d2afc3789d8a"
+          }
+        },
+        {
+          "client_id": "76182237574-447emvlnv7r3af40v457r5n801kun9pq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_a9UI-31_ClMgLz1CT_lzvAfIWlkuqug"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76182237574-447emvlnv7r3af40v457r5n801kun9pq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
