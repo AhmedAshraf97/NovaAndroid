@@ -14,7 +14,14 @@
     <string name="editprofile_HintUsername">Change username</string>
     <string name="editprofile_HintLoc">Add your location</string>
     <string name="editprofile_HintBio">Add a bio to your profile</string>
+    <string name="Profile_Page_Retweets">Retweets</string>
+    <string name="Profile_Page_Tweets">Tweets</string>
+    <string name="Profile_Page_Likes">Likes</string>
+    <string name="Profile_Page_Media">Media</string>
+    <string name="Profile_Following">Following</string>
+    <string name="Profile_Followers">Followers</string>
     <string name="SignIn_LogIn">Log in to Nova</string>
+    <string name="Home">Home</string>
     <string name="SignIn_UsernameHint">Enter Your Email</string>
     <string name="SignIn_PasswordHint">Enter Your Password</string>
     <string name="SignIn_Confirm">Confirm</string>

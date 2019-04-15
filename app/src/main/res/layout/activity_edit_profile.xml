@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightgrey"
     tools:context=".EditProfile">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -85,6 +86,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginLeft="120dp"
         android:hint="To be verified"
+        android:textColor="@color/black"
         android:textColorHint="@color/grey"
         />
 
@@ -119,6 +121,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginLeft="120dp"
         android:hint="@string/editprofile_HintUsername"
+        android:textColor="@color/black"
         android:textColorHint="@color/grey"
         />
 
@@ -154,6 +157,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginLeft="120dp"
         android:hint="@string/editprofile_HintBio"
+        android:textColor="@color/black"
         android:textColorHint="@color/grey"
         />
 
@@ -190,6 +194,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginLeft="120dp"
         android:hint="@string/editprofile_HintLoc"
+        android:textColor="@color/black"
         android:textColorHint="@color/grey"
         />
 

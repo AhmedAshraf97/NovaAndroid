@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePage"
+    android:background="@color/lightgrey"
+    >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Profile_First"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="0dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/image_Profile_Photo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profilepicture" />
+
+        <TextView
+            android:id="@+id/TextView_Profile_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_Profile_Photo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/fallingskybd"
+            android:text="Ahmed Ashraf"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/TextView_Profile_UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextView_Profile_Name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/fallingsky"
+            android:text="Ahmed Ashraf"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/Button_Profile_EditProfile"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Button_SignIn_Confirm"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttonwhite"
+            android:fontFamily="@font/fallingsky"
+            android:text="@string/Profile_EditProfile"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/Button_Profile_Following"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Button_Profile_EditProfile"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttonwhite"
+            android:fontFamily="@font/fallingsky"
+            android:text="@string/Profile_Following"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/Button_Profile_Followers"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Button_Profile_Following"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttonwhite"
+            android:fontFamily="@font/fallingsky"
+            android:text="@string/Profile_Followers"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/TextView_Profile_UserName"
+            android:layout_marginTop="10dp"
+            android:background="@color/grey"></LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Profile_Second"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/RelativeLayout_Profile_First">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/TabLayout_Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/ViewPager_Profile"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/TabLayout_Profile"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+</RelativeLayout>
