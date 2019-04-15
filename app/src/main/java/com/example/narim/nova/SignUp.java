@@ -185,7 +185,6 @@ public class SignUp extends AppCompatActivity {
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-       // getData();
         text1= findViewById(R.id.Text1);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
@@ -237,12 +236,13 @@ public class SignUp extends AppCompatActivity {
      */
     // https://3567aa04-ab9f-4d91-a98c-cdb32235902e.mock.pstmn.io/account/signup1
     private void getData(){
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://3567aa04-ab9f-4d91-a98c-cdb32235902e.mock.pstmn.io/account/signup1",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://3.18.190.89:8080/account/signup.json",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
 
                         try {
+                            Log.e("success","Yes");
                             Gson gson = new Gson();
                             SignUpResponse wrapper = gson.fromJson(response, SignUpResponse.class);
                             Log.e("someOtherrrrr", response);

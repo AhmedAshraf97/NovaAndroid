@@ -44,7 +44,7 @@
             android:id="@+id/EditText_Posttweet"
             android:layout_below="@id/textview_posttweet_cancel"
             android:fontFamily="@font/fallingsky"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/black"
 
             />
 

@@ -94,7 +94,7 @@ public class SignIn extends AppCompatActivity {
      * Connects to the url , sends reuests and gets response
      */
     private void getData(){
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://3567aa04-ab9f-4d91-a98c-cdb32235902e.mock.pstmn.io/account/signin2",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "http://3.18.190.89:8080/account/signin.json",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
