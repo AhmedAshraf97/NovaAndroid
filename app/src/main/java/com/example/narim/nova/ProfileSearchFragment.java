@@ -40,7 +40,7 @@ public class ProfileSearchFragment extends android.support.v4.app.Fragment {
         String Bio[] ={"Hi i'm dina","Hi i'm menna","Hi i'm arwa","Hi i'm ziad"};
         for(int i=0; i<Name.length; i++)
         {
-            Profile profile =new Profile(Name[i],ScreenName[i],Bio[i]);
+            Profile profile =new Profile(Name[i],"@" + ScreenName[i],Bio[i]);
             profiles.add(profile);
         }
         RecylerView_Search_Profile=view.findViewById(R.id.FollowersNotifications_RecyclerView);

@@ -21,25 +21,26 @@
         android:fontFamily="@font/fallingskybd"
         android:id="@+id/TextView_Notifications_title"/>
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:background="@drawable/profilepicture"
         android:layout_toLeftOf="@id/TextView_Notifications_title"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/ImageView_Notifications"
-        android:layout_marginRight="50dp"/>
+        android:layout_marginRight="50dp"
+        />
 
 
     <TextView
-        android:layout_width="80dp"
-        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
         android:id="@+id/TextView_Notifications_back"
-        android:layout_marginLeft="330dp"
+        android:layout_marginLeft="300dp"
         android:text="@string/Back"
         android:layout_marginTop="15dp"
         android:background="@color/lightgrey"
         android:textColor="@color/colorPrimary"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:fontFamily="@font/fallingskybd" />
 </RelativeLayout>
 

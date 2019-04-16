@@ -9,7 +9,7 @@
         android:text="@string/Likes"
         android:textColor="@color/colorPrimary"
         android:fontFamily="@font/fallingskybd"
-        android:textSize="18dp"
+        android:textSize="15dp"
         android:gravity="center"
         android:id="@+id/TextView_Notifications_LikesTab"/>
 </RelativeLayout>

@@ -28,7 +28,7 @@ public class Splash extends AppCompatActivity {
 
             }
 
-        }, seconds * 3000);
+        }, seconds * 1000);
 
         final Button SignIn=findViewById(R.id.button_splash_signIn);
         SignIn.setOnClickListener(new View.OnClickListener() {

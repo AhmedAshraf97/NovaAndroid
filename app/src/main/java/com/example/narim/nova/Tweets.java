@@ -11,7 +11,7 @@ public class Tweets {
     public Tweets(String profileName,String profileScreenName, String tweetText, String repliesNumber, String retweetsNumber,String likesNumber)
     {
         this.ProfileName=profileName;
-        this.ProfileScreenName=profileScreenName;
+        this.ProfileScreenName="@" + profileScreenName;
         this.TweetText=tweetText;
         this.RepliesNumber=repliesNumber;
         this.RetweetsNumber=retweetsNumber;

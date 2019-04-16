@@ -48,6 +48,8 @@ public class SignUp extends AppCompatActivity {
      */
     public boolean CheckEmail(String Email) {
 
+        if(Email.isEmpty())
+            return false;
         String ePattern = "^[a-zA-Z]+[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]*@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$";
         java.util.regex.Pattern p = java.util.regex.Pattern.compile(ePattern);
         java.util.regex.Matcher m = p.matcher(Email);
@@ -108,7 +110,10 @@ public class SignUp extends AppCompatActivity {
 
         if (p1.length() != p2.length()) {
             return false;
-        } else {
+        }else if(p1.isEmpty() || p2.isEmpty()){
+            return false;
+        }
+        else {
 
             char[] p1char = p1.toCharArray();
             char[] p2char = p2.toCharArray();
@@ -163,7 +168,7 @@ public class SignUp extends AppCompatActivity {
             InvalidScreenName.setVisibility(View.VISIBLE);
             Check = false;
         }
-        if(!CheckEmail(Email.getText().toString())&& Email.length()!=0){
+        if(!CheckEmail(Email.getText().toString())&& Email.length()==0){
             InvalidEmail.setVisibility(View.VISIBLE);
             Check = false;
         }

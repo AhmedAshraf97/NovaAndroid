@@ -28,7 +28,7 @@
 
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/TextView_SignIn_LogIn"
         android:hint="@string/SignIn_UsernameHint"
@@ -39,11 +39,12 @@
         android:textColorHint="@color/grey"
         android:textColor="@color/black"
         android:maxLines="1"
-        android:singleLine="true"/>
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"/>
 
     <EditText
         android:id="@+id/EditText_SignIn_Password"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/EditText_SignIn_Email"
         android:layout_alignParentLeft="true"
@@ -54,7 +55,8 @@
         android:maxLines="1"
         android:singleLine="true"
         android:textColor="@color/black"
-        android:textColorHint="@color/grey" />
+        android:textColorHint="@color/grey"
+        android:layout_centerHorizontal="true"/>
 
 
 
@@ -65,7 +67,7 @@
         android:layout_below="@+id/EditText_SignIn_Password"
         android:layout_marginTop="25dp"
         android:id="@+id/Button_SignIn_Confirm"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="20dp"
         android:textColor="@android:color/white"
         android:background="@drawable/button"
         android:text="@string/SignIn_Confirm"
@@ -76,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/EditText_SignIn_Password"
         android:layout_marginTop="25dp"
-        android:layout_marginLeft="160dp"
+        android:layout_marginLeft="140dp"
         android:textColor="@android:color/white"
         android:id="@+id/Button_SignIn_ForgotPassword"
         android:background="@drawable/button"

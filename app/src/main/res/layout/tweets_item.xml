@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 <ImageView
-    android:layout_width="60dp"
-    android:layout_height="60dp"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
     android:src="@drawable/profilepicture"
     android:layout_marginLeft="10dp"
     android:layout_marginTop="10dp"
@@ -15,10 +15,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/Tweet_ProfilePicture"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:fontFamily="@font/fallingskybd"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:textColor="@color/black"
         android:id="@+id/Tweet_Name"
         />
@@ -34,15 +34,15 @@
         android:layout_marginLeft="24dp"
         />
     <TextView
-        android:layout_width="400dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="5dp"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/Tweet_ProfilePicture"
         android:textColor="@color/black"
         android:layout_below="@+id/Tweet_ScreenName"
         android:id="@+id/Tweet_TweetText"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="10dp"/>
          <ImageView
         android:layout_width="200dp"
         android:layout_height="0dp"
@@ -79,7 +79,7 @@
             android:id="@+id/Tweet_RepliesIcon"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="70dp"
             android:layout_toRightOf="@id/Tweet_RetweetsNumber"
             android:src="@drawable/ic_message_black_24dp" />
 
@@ -96,7 +96,7 @@
             android:id="@+id/Tweet_LikesIcon"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="70dp"
             android:layout_toRightOf="@id/Tweet_RepliesNumber"
             android:src="@drawable/ic_star_black_24dp" />
 

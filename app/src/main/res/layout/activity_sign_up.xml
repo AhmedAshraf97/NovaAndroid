@@ -136,7 +136,7 @@
         android:layout_below="@id/EditText_SignUp_ReEnterPassword"
         android:layout_marginLeft="20dp"
         android:textSize="10sp"
-        android:text="x Not the same password"
+        android:text="x Invalid Passowrd"
         android:textColor="@color/red"
         />
 

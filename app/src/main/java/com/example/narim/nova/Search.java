@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
@@ -15,6 +16,8 @@ public class Search extends AppCompatActivity {
     TabLayout SearchTabLayout;
     ViewPager SearchViewPager;
     TextView SearchBack;
+    Button FollowButton;
+    TextView Search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +25,9 @@ public class Search extends AppCompatActivity {
         setContentView(R.layout.activity_search);
         SearchTabLayout = findViewById(R.id.TabLayout_Search_Tab);
         SearchViewPager = findViewById(R.id.ViewPager_Notification);
-        SearchBack=findViewById(R.id.TextView_Search_back);
+        SearchBack = findViewById(R.id.TextView_Search_back);
+        Search = findViewById(R.id.TextView_Search_SearchLogo);
+        FollowButton = findViewById(R.id.Button_Profile_Follow);
         SearchPageTabsAdapter adapter = new SearchPageTabsAdapter(getSupportFragmentManager());
         adapter.AddFragment("one", new ProfileSearchFragment());
         adapter.AddFragment("two", new TweetsSearchFragment());

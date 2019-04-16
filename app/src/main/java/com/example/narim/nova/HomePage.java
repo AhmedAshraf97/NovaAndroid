@@ -65,6 +65,14 @@ public class HomePage extends AppCompatActivity {
                 finish();
             }
         });
+        Search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(HomePage.this,Search.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         PostTweet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

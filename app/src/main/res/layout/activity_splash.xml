@@ -31,7 +31,7 @@
         android:layout_gravity="center_vertical"
         android:id="@+id/button_splash_signIn"
         android:text="@string/splash_signin"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="15dp"
         />
     <Button
         android:layout_width="150dp"
@@ -39,7 +39,7 @@
         android:background="@color/colorPrimary"
         android:text="@string/splash_signup"
         android:id="@+id/button_splash_signUp"
-        android:layout_marginLeft="70dp"
+        android:layout_marginLeft="30dp"
         android:layout_gravity="center_vertical"
         android:textColor="@color/white"
         android:textSize="18dp"
