@@ -14,8 +14,8 @@
     <string name="editprofile_HintUsername">Change username</string>
     <string name="editprofile_HintLoc">Add your location</string>
     <string name="editprofile_HintBio">Add a bio to your profile</string>
-    <string name="Profile_Page_Retweets">Retweets</string>
-    <string name="Profile_Page_Tweets">Tweets</string>
+    <string name="Profile_Page_Retweets">ReNovas</string>
+    <string name="Profile_Page_Tweets">Novas</string>
     <string name="Profile_Page_Likes">Likes</string>
     <string name="Profile_Page_Media">Media</string>
     <string name="Profile_Following">Following</string>
@@ -36,10 +36,10 @@
     <string name="Back">Back</string>
     <string name="Mentions">Mentions</string>
     <string name="Likes">Likes</string>
-    <string name="Retweets">Retweets</string>
+    <string name="Retweets">ReNovas</string>
     <string name="Followers">Followers</string>
     <string name="FollowersNotification">followed you.</string>
-    <string name="Tweet">Tweet</string>
+    <string name="Tweet">Nova</string>
     <string name="WhatsHappening">What\'s Happening?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
