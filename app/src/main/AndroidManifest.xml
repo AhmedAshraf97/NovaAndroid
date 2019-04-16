@@ -11,12 +11,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProfilePage"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".Following"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".Followers"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".Splash"
             android:theme="@style/Theme.AppCompat.NoActionBar">
@@ -41,9 +35,8 @@
         <activity
             android:name=".ForgotPassword"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity
-            android:name=".NotificationsPage"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".NotificationsPage"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
     </application>
 
 </manifest>

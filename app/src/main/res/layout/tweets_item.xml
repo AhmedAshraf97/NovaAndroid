@@ -56,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_below="@+id/Tweet_TweetPhoto"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="11dp">
 
         <ImageView
             android:id="@+id/Tweet_RetweetsIcon"
@@ -70,9 +70,9 @@
             android:id="@+id/Tweet_RetweetsNumber"
             android:layout_width="wrap_content"
             android:layout_height="25dp"
-            android:textColor="@color/black"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/Tweet_RetweetsIcon"
+            android:textColor="@color/black"
             android:textSize="20dp" />
 
         <ImageView
@@ -105,8 +105,8 @@
             android:layout_width="wrap_content"
             android:layout_height="25dp"
             android:layout_marginLeft="15dp"
-            android:textColor="@color/black"
             android:layout_toRightOf="@+id/Tweet_LikesIcon"
+            android:textColor="@color/black"
             android:textSize="20dp" />
     </RelativeLayout>
     <LinearLayout
