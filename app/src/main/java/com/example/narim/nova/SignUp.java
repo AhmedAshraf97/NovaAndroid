@@ -236,7 +236,7 @@ public class SignUp extends AppCompatActivity {
      */
     // https://3567aa04-ab9f-4d91-a98c-cdb32235902e.mock.pstmn.io/account/signup1
     private void getData(){
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://3.18.190.89:8080/account/signup.json",
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://d8735147-17f3-4467-9b22-3109a0b352ba.mock.pstmn.io/signup",
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -246,7 +246,7 @@ public class SignUp extends AppCompatActivity {
                             Gson gson = new Gson();
                             SignUpResponse wrapper = gson.fromJson(response, SignUpResponse.class);
                             Log.e("someOtherrrrr", response);
-                            Toast.makeText(SignUp.this, response, Toast.LENGTH_LONG).show();
+                            //Toast.makeText(SignUp.this, response, Toast.LENGTH_LONG).show();
                             //if(wrapper.getMessage()=="OK") {
                               //  Intent i = new Intent(SignUp.this, HomePage.class);
                                // startActivity(i);
@@ -255,9 +255,9 @@ public class SignUp extends AppCompatActivity {
                             if (wrapper.getStatus()==200) {
                                 SignUpResult signUpResult=wrapper.getResult();
                                 Toast.makeText(SignUp.this,"Sucessful",Toast.LENGTH_LONG).show();
-                                Log.e("id",signUpResult.get_id());
+                                Log.e("id",signUpResult.getID());
                                 Log.e("email",signUpResult.getEmail());
-                                Log.e("screenname",signUpResult.getScreenname());
+                                Log.e("screenname",signUpResult.getScreen_name());
                                 Log.e("name",signUpResult.getName());
                             } else {
                                 if(wrapper.getMessage()=="email already registered.")

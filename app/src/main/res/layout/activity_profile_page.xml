@@ -13,15 +13,50 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-
         android:layout_marginTop="0dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/fallingskybd"
+            android:id="@+id/TextView_Profile_Title"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgrey"
+            android:text="@string/Back"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/fallingskybd"
+            android:id="@+id/Textview_Profile_Back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgrey"
+            android:text="SignOut"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/fallingskybd"
+            android:id="@+id/Textview_Profile_SignOut"
+            />
 
         <android.support.v7.widget.AppCompatImageView
             android:id="@+id/image_Profile_Photo"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/profilepicture" />
 
         <TextView
@@ -30,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/image_Profile_Photo"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/fallingskybd"
             android:text="Ahmed Ashraf"
             android:textColor="@color/black"
@@ -56,7 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/Button_SignIn_Confirm"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="60dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/buttonwhite"
             android:fontFamily="@font/fallingsky"
@@ -70,7 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/Button_Profile_EditProfile"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/buttonwhite"
             android:fontFamily="@font/fallingsky"
@@ -85,7 +120,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/Button_Profile_Following"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/buttonwhite"
             android:fontFamily="@font/fallingsky"

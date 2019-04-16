@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class ProfilePage extends AppCompatActivity {
 
@@ -14,8 +15,9 @@ public class ProfilePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_page);
-        TabLayout ProfilePage_TabLayout = findViewById(R.id.TabLayout_Profile);
+        final TabLayout ProfilePage_TabLayout = findViewById(R.id.TabLayout_Profile);
         ViewPager ProfilePage_ViewPage = findViewById(R.id.ViewPager_Profile);
+        TextView Back=findViewById(R.id.Textview_Profile_Back);
 
         ProfilePage_Adapter adapter = new ProfilePage_Adapter(getSupportFragmentManager());
 
@@ -34,7 +36,16 @@ public class ProfilePage extends AppCompatActivity {
         Button EditProfile = findViewById(R.id.Button_Profile_EditProfile);
         Button Following = findViewById(R.id.Button_Profile_Following);
         Button Followers = findViewById(R.id.Button_Profile_Followers);
+        TextView SignOut=findViewById(R.id.Textview_Profile_SignOut);
 
+        SignOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(ProfilePage.this,SignIn.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         EditProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,6 +70,15 @@ public class ProfilePage extends AppCompatActivity {
                 Intent intent = new Intent(ProfilePage.this,Following.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(ProfilePage.this,HomePage.class);
+                startActivity(intent);
+                finish();
+
             }
         });
     }

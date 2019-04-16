@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -29,7 +30,7 @@ public class ForgotPassword extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password);
-        ImageView Back = findViewById(R.id.Image_ForgotPassword_Back);
+        TextView Back = findViewById(R.id.Image_ForgotPassword_Back);
         Button Confirm = findViewById(R.id.Button_ForgotPassword_Confirm);
         Email = findViewById(R.id.EditText_ForgotPassword_Email);
         final EditText SignInField = findViewById(R.id.EditText_ForgotPassword_Email);

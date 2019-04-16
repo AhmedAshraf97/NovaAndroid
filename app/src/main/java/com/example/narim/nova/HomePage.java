@@ -47,11 +47,22 @@ public class HomePage extends AppCompatActivity {
         TweetRecView.setLayoutManager(new LinearLayoutManager(HomePage.this));
         TweetsAdapter tweetsAdapter=new TweetsAdapter(tweets);
         TweetRecView.setAdapter(tweetsAdapter);
+
+        Profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(HomePage.this,ProfilePage.class);
+                startActivity(intent);
+                finish();
+
+            }
+        });
         Notifications.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(HomePage.this,NotificationsPage.class);
                 startActivity(intent);
+                finish();
             }
         });
         PostTweet.setOnClickListener(new View.OnClickListener() {

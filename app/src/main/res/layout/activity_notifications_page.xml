@@ -33,7 +33,6 @@
     <TextView
         android:layout_width="80dp"
         android:layout_height="50dp"
-        android:src="@drawable/ic_chevron_left_black_24dp"
         android:id="@+id/TextView_Notifications_back"
         android:layout_marginLeft="330dp"
         android:text="@string/Back"
