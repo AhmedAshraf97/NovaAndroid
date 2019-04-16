@@ -61,6 +61,10 @@ EditText tweettext;
         return view;
     }
 
+    /**
+     * @param title
+     * @return
+     */
     public static PostTweet newInstance(String title) {
         PostTweet frag = new PostTweet();
         return frag;

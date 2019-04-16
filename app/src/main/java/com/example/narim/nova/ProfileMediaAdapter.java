@@ -16,6 +16,12 @@ public class ProfileMediaAdapter extends RecyclerView.Adapter<ProfileMediaAdapte
     public ProfileMediaAdapter(List<Tweets> tweets)
     {this.Tweets= tweets;}
 
+    /**
+     * @param viewGroup
+     * @param i
+     * @return
+     * Set each recycler view item to the given item layout
+     */
     @NonNull
     @Override
     public ProfileMediaAdapter.myViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -24,6 +30,11 @@ public class ProfileMediaAdapter extends RecyclerView.Adapter<ProfileMediaAdapte
         return holder;
     }
 
+    /**
+     * @param myViewHolder
+     * @param i
+     * Set the Media data in the text views
+     */
     @Override
     public void onBindViewHolder(@NonNull ProfileMediaAdapter.myViewHolder myViewHolder, int i) {
         Tweets tweets= Tweets.get(i);
@@ -35,6 +46,10 @@ public class ProfileMediaAdapter extends RecyclerView.Adapter<ProfileMediaAdapte
         myViewHolder.LikesNumber.setText(tweets.LikesNumber);
     }
 
+    /**
+     * @return
+     * This methods return the count of the given Media list
+     */
     @Override
     public int getItemCount() {
         return Tweets.size();

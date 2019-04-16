@@ -19,6 +19,12 @@ public class Followers_Adapter extends RecyclerView.Adapter<Followers_Adapter.my
         this.Items = Items;
     }
 
+    /**
+     * @param viewGroup
+     * @param i
+     * @return
+     * Set each recycler view item to the given item layout
+     */
     @NonNull
     @Override
     public myViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -28,6 +34,11 @@ public class Followers_Adapter extends RecyclerView.Adapter<Followers_Adapter.my
     }
 
 
+    /**
+     * @param myViewHolder
+     * @param i
+     * Set the followers data in the text views
+     */
     @Override
     public void onBindViewHolder(@NonNull Followers_Adapter.myViewHolder myViewHolder, int i) {
         Followers_Item item =Items.get(i);
@@ -35,6 +46,10 @@ public class Followers_Adapter extends RecyclerView.Adapter<Followers_Adapter.my
         myViewHolder.Username.setText(item.Username);
     }
 
+    /**
+     * @return
+     * This methods return the count of the given Followers list
+     */
     @Override
     public int getItemCount() {
         return Items.size();

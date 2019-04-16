@@ -16,6 +16,12 @@ public class ProfileLikesAdapter extends RecyclerView.Adapter<ProfileLikesAdapte
     public ProfileLikesAdapter(List<Tweets> tweets)
     {this.Tweets= tweets;}
 
+    /**
+     * @param viewGroup
+     * @param i
+     * @return
+     * Set each recycler view item to the given item layout
+     */
     @NonNull
     @Override
     public ProfileLikesAdapter.myViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -24,6 +30,11 @@ public class ProfileLikesAdapter extends RecyclerView.Adapter<ProfileLikesAdapte
         return holder;
     }
 
+    /**
+     * @param myViewHolder
+     * @param i
+     * Set the liked tweets data in the text views
+     */
     @Override
     public void onBindViewHolder(@NonNull ProfileLikesAdapter.myViewHolder myViewHolder, int i) {
         Tweets tweets= Tweets.get(i);
@@ -35,6 +46,10 @@ public class ProfileLikesAdapter extends RecyclerView.Adapter<ProfileLikesAdapte
         myViewHolder.LikesNumber.setText(tweets.LikesNumber);
     }
 
+    /**
+     * @return
+     * This methods return the count of the given liked tweets list
+     */
     @Override
     public int getItemCount() {
         return Tweets.size();

@@ -16,6 +16,7 @@ public class SignInResponse {
     @Expose
     private SignInResult result = null;
 
+
     public int getStatus() {
         return status;
     }

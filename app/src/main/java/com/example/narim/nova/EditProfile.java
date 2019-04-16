@@ -10,8 +10,26 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+/**
+ * The type Edit profile.
+ */
 public class EditProfile extends AppCompatActivity {
-    EditText Name,Username,Bio,Location;
+    /**
+     * The Name.
+     */
+    EditText Name, /**
+     * The Username.
+     */
+    Username, /**
+     * The Bio.
+     */
+    Bio, /**
+     * The Location.
+     */
+    Location;
+    /**
+     * The Save.
+     */
     Button Save;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,11 +66,24 @@ public class EditProfile extends AppCompatActivity {
     }
 
     private TextWatcher EditProfile=new TextWatcher() {
+        /**
+         * @param charSequence
+         * @param i
+         * @param i1
+         * @param i2
+         */
         @Override
         public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
         }
 
+        /**
+         * @param charSequence
+         * @param i
+         * @param i1
+         * @param i2
+         *Make the button apear when writing any text and make it disappear when the text is removed
+         */
         @Override
         public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
         if (!(Name.getText().toString().isEmpty())||!(Username.getText().toString().isEmpty())||!(Bio.getText().toString().isEmpty())||!(Location.getText().toString().isEmpty()))
@@ -61,6 +92,9 @@ public class EditProfile extends AppCompatActivity {
             {Save.setVisibility(View.INVISIBLE);}
         }
 
+        /**
+         * @param editable
+         */
         @Override
         public void afterTextChanged(Editable editable) {
 

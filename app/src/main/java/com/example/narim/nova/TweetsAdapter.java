@@ -16,6 +16,12 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.myViewHold
     public TweetsAdapter(List<Tweets> tweets)
     {this.Tweets= tweets;}
 
+    /**
+     * @param viewGroup
+     * @param i
+     * Set each recycler view item to the given item layout
+     * @return
+     */
     @NonNull
     @Override
     public TweetsAdapter.myViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -24,6 +30,11 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.myViewHold
         return holder;
     }
 
+    /**
+     * @param myViewHolder
+     * @param i
+     * Set the Tweets data in the text views
+     */
     @Override
     public void onBindViewHolder(@NonNull TweetsAdapter.myViewHolder myViewHolder, int i) {
         Tweets tweets= Tweets.get(i);
@@ -35,6 +46,10 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.myViewHold
         myViewHolder.LikesNumber.setText(tweets.LikesNumber);
     }
 
+    /**
+     * @return
+     * This methods return the count of the given Tweets list
+     */
     @Override
     public int getItemCount() {
         return Tweets.size();
@@ -48,6 +63,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.myViewHold
         TextView RepliesNumber;
         TextView RetweetsNumber;
         TextView LikesNumber;
+
 
         public myViewHolder(@NonNull final View itemView) {
             super(itemView);

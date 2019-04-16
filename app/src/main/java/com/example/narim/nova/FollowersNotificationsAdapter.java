@@ -16,6 +16,12 @@ public class FollowersNotificationsAdapter extends RecyclerView.Adapter<Follower
         this.Items = Items;
     }
 
+    /**
+     * @param viewGroup
+     * @param i
+     * @return
+     * Set each recycler view item to the given item layout
+     */
     @NonNull
     @Override
     public myViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -25,13 +31,20 @@ public class FollowersNotificationsAdapter extends RecyclerView.Adapter<Follower
     }
 
 
-
+    /**
+     * @param myViewHolder
+     * @param i
+     *  Set the Followers Notification data in the text views
+     */
     @Override
     public void onBindViewHolder(@NonNull FollowersNotificationsAdapter.myViewHolder myViewHolder, int i) {
         FollowersNotificationItem item =Items.get(i);
         myViewHolder.FollowerName.setText(item.FollowerName);
              }
 
+    /**
+     * @return Count of given list
+     */
     @Override
     public int getItemCount() {
         return Items.size();

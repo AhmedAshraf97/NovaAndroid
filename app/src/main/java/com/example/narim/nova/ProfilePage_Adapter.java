@@ -24,6 +24,13 @@ public class ProfilePage_Adapter extends FragmentStatePagerAdapter{
         return fragments.size();
     }
 
+    /**
+     * Add fragment.
+     *
+     * @param x the x
+     * @param y the y
+     *   This method add the String x to the list of strings and Fragment y to list fo fragments
+     */
     public void AddFragment(String x, Fragment y)
     {
         strings.add(x);
